@@ -25,4 +25,15 @@ class Driver {
       hiredAt: json['hiredAt'] as String?,
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'fullName': fullName,
+      'phone': phone,
+      'licenseNumber': licenseNumber,
+      'status': status,
+      'hiredAt': hiredAt,
+    };
+  }
 }
