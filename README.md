@@ -144,15 +144,7 @@ flutter run
 
 ## Скриншоты приложения
 
-| Экран | Скриншот |
-|-------|----------|
-| Авторизация | ![Login](docs/07-ui/images/login.png) |
-| Главная | ![Home](docs/07-ui/images/home.png) |
-| Водители | ![Drivers](docs/07-ui/images/drivers.png) |
-| Заказы | ![Orders](docs/07-ui/images/orders.png) |
-| Детали заказа | ![Order Detail](docs/07-ui/images/order-detail.png) |
-| Автомобили | ![Cars](docs/07-ui/images/cars.png) |
-| Назначение водителя | ![Assign Driver](docs/07-ui/images/assign-driver.png) |
+Скриншоты всех экранов доступны в [документации интерфейса](docs/07-ui/README.md).
 
 ## Документация
 

@@ -455,6 +455,8 @@ class OrderServiceTest {
 | Время выполнения | ~2.3 сек |
 | Покрытие бизнес-логики | ~85% |
 
+![Отчёт покрытия JaCoCo](images/jacoco_report.png)
+
 ---
 
 ## 6.7 Рефакторинг
@@ -496,6 +498,8 @@ private Driver driver;
 | Magic numbers | 0 | — | — |
 | SQL injection | 0 | — | — |
 | Hardcoded credentials | 0 | — | — |
+
+![Результаты статического анализа](images/static_analysis.png)
 
 ---
 
