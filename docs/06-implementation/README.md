@@ -457,6 +457,8 @@ class OrderServiceTest {
 
 ![Отчёт покрытия JaCoCo](images/jacoco_report.png)
 
+*Рисунок 6.1 — Отчёт о покрытии кода тестами (JaCoCo)*
+
 ---
 
 ## 6.7 Рефакторинг
@@ -500,6 +502,8 @@ private Driver driver;
 | Hardcoded credentials | 0 | — | — |
 
 ![Результаты статического анализа](images/static_analysis.png)
+
+*Рисунок 6.2 — Результаты статического анализа кода*
 
 ---
 

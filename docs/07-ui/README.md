@@ -233,28 +233,64 @@ class ApiService {
 
 ---
 
+## Локальное кэширование (оффлайн-режим)
+
+В приложении реализовано локальное кэширование данных о водителях
+через `SharedPreferences`. Реализация находится в файле
+`lib/providers/drivers_provider.dart`.
+
+**Принцип работы:**
+- При успешной загрузке список водителей сериализуется в JSON
+  и сохраняется в `SharedPreferences` с ключом `cached_drivers`
+- При отсутствии соединения с сервером данные автоматически
+  загружаются из локального кэша
+- Пользователь видит сообщение: «Нет соединения — показаны кэшированные данные»
+- Поле `fromCache` позволяет UI отображать индикатор оффлайн-режима
+
+**Используемые технологии:** `SharedPreferences`, `dart:convert` (jsonEncode/jsonDecode)
+
+**Файлы:**
+- `lib/providers/drivers_provider.dart` — логика кэширования
+- `lib/models/driver.dart` — метод `toJson()` для сериализации
+
+---
+
 ## 7.7 Скриншоты экранов
 
 ### Экран входа
 ![LoginScreen](images/login.png)
 
+*Рисунок 7.1 — Экран входа в систему (LoginScreen)*
+
 ### Главный экран (Дашборд)
 ![HomeScreen](images/home.png)
+
+*Рисунок 7.2 — Главный экран (HomeScreen)*
 
 ### Список водителей
 ![DriversScreen](images/drivers.png)
 
+*Рисунок 7.3 — Экран списка водителей (DriversScreen)*
+
 ### Список заказов
 ![OrdersScreen](images/orders.png)
+
+*Рисунок 7.4 — Экран списка заказов (OrdersScreen)*
 
 ### Детали заказа
 ![OrderDetailScreen](images/order-detail.png)
 
+*Рисунок 7.5 — Экран деталей заказа (OrderDetailScreen)*
+
 ### Список автомобилей
 ![CarsScreen](images/cars.png)
 
+*Рисунок 7.6 — Экран списка автомобилей (CarsScreen)*
+
 ### Назначение водителя
 ![AssignDriverScreen](images/assign-driver.png)
+
+*Рисунок 7.7 — Экран назначения водителя (AssignDriverScreen)*
 
 
 

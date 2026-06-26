@@ -92,6 +92,8 @@ UC13 ..> UC14 : <<extend>>
 
 ![Use Case диаграмма](images/use-case.png)
 
+*Рисунок 2.1 — Диаграмма прецедентов использования (Use Case)*
+
 ---
 
 ## 2.2 Domain Model (Доменная модель)
@@ -198,6 +200,8 @@ Order --> OrderStatus
 ```
 
 ![Domain Model](images/domain-model.png)
+
+*Рисунок 2.2 — Доменная модель предметной области*
 
 ---
 
